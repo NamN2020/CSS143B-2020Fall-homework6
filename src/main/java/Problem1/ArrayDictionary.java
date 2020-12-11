@@ -1,5 +1,10 @@
 package Problem1;
-
+/*
+    Nam Nguyen
+    12/15/20
+    CSS 143
+    Homework 6
+ */
 public class ArrayDictionary implements Dictionary {
     private KVEntry[] entries;
 
@@ -46,6 +51,8 @@ public class ArrayDictionary implements Dictionary {
     @Override
     public void remove(String key) {
         // homework
+
+
     }
 
     @Override
