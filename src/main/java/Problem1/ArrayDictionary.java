@@ -1,4 +1,5 @@
 package Problem1;
+
 /*
     Nam Nguyen
     12/15/20
@@ -51,8 +52,18 @@ public class ArrayDictionary implements Dictionary {
     @Override
     public void remove(String key) {
         // homework
+        int hashedKey = hashFunction(key);
 
+        if (entries[hashedKey] == null) {
+            return;
+        }
 
+        KVEntry ptr = entries[hashedKey];
+
+        if (ptr.key.equals((key))) {
+            entries[hashedKey] = ptr.next;
+            return;
+        }
     }
 
     @Override
